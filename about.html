@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Website developing, development, how to build website, website making company">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="E-Web Tech" /> <!-- website name -->
+    <meta property="og:site" content="https://digitalpreneurservice.000webhostapp.com/" /> <!-- website link -->
+    <meta property="og:title" content="Make your own Website Now easily with Us" />
+    <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="Website Making Company. Efficient building developer." />
+    <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>E-Web Tech Pvt Ltd.</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/favicon.png">
+</head>
+
+<body>
+<!-- Navigation -->
+<nav id="navbar" class=" navbar navbar-expand-lg fixed-top navbar-dark " aria-label="Main navigation">
+    <div class="container">
+
+        <!-- Image Logo -->
+        <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> -->
+
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <a class="navbar-brand logo-text home_text fs-2" href="/index.html">KrishnaTrix</a>
+
+        <a href="javascript:void(0)">
+            <i class="fas fa-bars fs-1 navbar-toggler p-0 border-0" id="navbarSideCollapse" aria-label="Toggle navigation"></i>
+        </a>
+
+
+
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/index.html#header">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html#services">Services</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" href="#">More</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Rate Us</a></li>
+                        <li>
+                            <div class="dropdown-divider"></div>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Our Projects</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://www.facebook.com/KrishnaTrix-226890745958076/">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="https://instagram.com/krishnatrix_web_solutions?utm_medium=copy_link">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div> <!-- end of navbar-collapse -->
+    </div> <!-- end of container -->
+</nav> <!-- end of navbar -->
+<!-- end of navigation -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title" id="exampleModalLabel">Rate Us</h5>
+                <button type="button" id="clear-button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-dark">
+
+
+                <form method="post" action="" class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-12">
+                        <h5 class="text-light">Provide Us Your Valuable Feedback to Help & Improve Us</h5>
+                    </div>
+                    <div class="col-md-8">
+                        <label for="validationCustom03" class="form-label text-light">Rate Us Now</label>
+                        <div class="star-widget" onclick="showfdback()">
+                            <input type="radio" class="rate" name="rate" id="rate-1" value="5-star-ratings">
+                            <label for="rate-1"><i class="far fa-star"></i></label>
+
+                            <input type="radio" class="rate" name="rate" id="rate-2" value="4-star-ratings">
+                            <label class="form-label" for="rate-2"><i class="far fa-star"></i></label>
+
+                            <input type="radio" class="rate" name="rate" id="rate-3" value="3-star-ratings">
+                            <label for="rate-3"><i class="far fa-star"></i></label>
+
+                            <input type="radio" class="rate" name="rate" id="rate-4" value="2-star-ratings">
+                            <label for="rate-4"><i class="far fa-star"></i></label>
+
+                            <input type="radio" class="rate" name="rate" id="rate-5" value="1-star-ratings">
+                            <label for="rate-5"><i class="far fa-star"></i></label>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 formhide">
+                        <label for="validationCustom03" class="form-label text-light">Name</label>
+                        <input type="text" class="form-control bg-transparent text-white" id="validationCustom01" required name="name">
+                        <div class="invalid-feedback">
+                            Please provide your Name.
+                        </div>
+                    </div>
+                    <div class="col-md-7 formhide">
+                        <label for="validationCustom03" class="form-label text-light">Feedback Message</label>
+                        <textarea style="resize: none;" type="text" rows="4" name="message" class="form-control bg-transparent text-light" id="validationCustom03" required></textarea>
+                        <div class="invalid-feedback">
+                            Please provide a Message.
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 text-center">
+                        <button class="btn btn-success" name="submit" type="submit">Submit form</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Modal -->
+    <!-- Img Header Starts-->
+    <section>
+        <div class="bg-img">
+        </div>
+        <div class="about-box">
+            <div class="box-1">
+                <div class="box-icon">
+                    <i class="far fa-gem"></i>
+                </div>
+                <div class="box-h2">
+                    <h2>Heading</h2>
+                </div>
+                <p class="box-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                </p>
+            </div>
+            <div class="box-2">
+                <div class="box-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="box-h2">
+                    <h2>Heading</h2>
+                </div>
+                <p class="box-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                </p>
+            </div>
+            <div class="box-3">
+                <div class="box-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="box-h2">
+                    <h2>Heading</h2>
+                </div>
+                <p class="box-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                </p>
+            </div>
+            <div class="box-4">
+                <div class="box-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="box-h2">
+                    <h2>Heading</h2>
+                </div>
+                <p class="box-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <!-- Img Header Ends -->
+
+    <!-- Header -->
+    <header class="ex-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h1>About Us</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+    <div class="d-flex testimonial text-light">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-9">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam facilis mollitia consequatur nihil inventore similique. Delectus, pariatur quis, est ipsam iste atque aliquam commodi nam aperiam, fuga debitis doloremque in.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam facilis mollitia consequatur nihil inventore similique. Delectus, pariatur quis, est ipsam iste atque aliquam commodi nam aperiam, fuga debitis doloremque in.
+                        , est ipsam iste atque aliquam commodi nam aperiam, fuga debitis doloremque in.
+                        Cupiditate ab ipsum corporis, earum a eaque et sit minus. Eaque delectus consequuntur debitis magni temporibus similique itaque recusandae numquam fugit esse maxime quis totam perspiciatis veniam, quisquam nam excepturi.</p>
+                </div>
+                <!-- <div class="col-3">
+                    <img src="./assets/images/about.webp" alt="" class="img-fluid">
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- About Team -->
+    <div class="d-flex testimonial text-light">
+        <div class="col-12 text-align-center">
+            <h2 class="text-primary my-2">Our Team</h2>
+        </div>
+    </div>
+    <div class=" d-flex testimonial text-light">
+        <div class="container">
+            <div class="row text-align-center">
+                <div class="col-md-4 px-4 my-4  reveal">
+                    <img src="./assets/images/aparna.webp" alt="img" class="img-fluid">
+                    <h3 class="text-secondary my-2">Anshu Singh</h3>
+                    <h5>Project Manager</h5>
+                    <a href="https://instagram.com/eerie.life4__?utm_medium=copy_link"> <i class="fab fa-instagram fa-2x py-2 m-3"></i></a>
+                    <a href="https://www.facebook.com/aparna.mandal.1293"> <i class="fab fa-facebook-f fa-2x py-2 m-3"></i></a>
+                    <a href="#"> <i class="fab fa-linkedin fa-2x py-2 m-3"></i></a>
+                </div>
+                <div class="col-md-4 px-4 my-4  reveal">
+                    <img src="./assets/images/bibhu.webp" alt="img" class="img-fluid">
+                    <h3 class="text-secondary my-2">Bibhuti Ranjan Das</h3>
+                    <h5>Developer</h5>
+                    <a href="https://instagram.com/eerie.life4__?utm_medium=copy_link"> <i class="fab fa-instagram fa-2x py-2 m-3"></i></a>
+                    <a href="https://www.facebook.com/aparna.mandal.1293"> <i class="fab fa-facebook-f fa-2x py-2 m-3"></i></a>
+                    <a href="#"> <i class="fab fa-linkedin fa-2x py-2 m-3"></i></a>
+                </div>
+                <div class="col-md-4 px-4 my-4  reveal">
+                    <img src="./assets/images/arup.webp" alt="img" class="img-fluid">
+                    <h3 class="text-secondary my-2">Arup Padhi</h3>
+                    <h5> Developer</h5>
+                    <a href="https://instagram.com/arupkumar_padhi?utm_medium=copy_link"> <i class="fab fa-instagram fa-2x py-2 m-3"></i></a>
+                    <a href="https://www.facebook.com/arupkumar.padhi.5"> <i class="fab fa-facebook-f fa-2x py-2 m-3"></i></a>
+                    <a href="https://www.linkedin.com/in/arup-kumar-padhi-452b35210"> <i class="fab fa-linkedin fa-2x py-2 m-3"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="d-flex testimonial text-light">
+        <div class="container reveal">
+            <div class="row text-align-center">
+                <div class="col-md-6 reveal">
+                    <img src="./assets/images/aparna.webp" alt="img" class="img-fluid">
+                    <h3 class="text-secondary my-2">Aparna Mondal</h3>
+                    <h5>Content Writer</h5>
+                    <a href="https://instagram.com/eerie.life4__?utm_medium=copy_link"> <i class="fab fa-instagram fa-2x py-2 m-3"></i></a>
+                    <a href="https://www.facebook.com/aparna.mandal.1293"> <i class="fab fa-facebook-f fa-2x py-2 m-3"></i></a>
+                    <a href="#"> <i class="fab fa-linkedin fa-2x py-2 m-3"></i></a>
+                </div>
+                <div class="col-md-6 reveal">
+                    <img src="./assets/images/aparna.webp" alt="img" class="img-fluid">
+                    <h3 class="text-secondary my-2">Deepak Kumar</h3>
+                    <h5>Designer</h5>
+                    <a href="https://instagram.com/eerie.life4__?utm_medium=copy_link"> <i class="fab fa-instagram fa-2x py-2 m-3"></i></a>
+                    <a href="https://www.facebook.com/aparna.mandal.1293"> <i class="fab fa-facebook-f fa-2x py-2 m-3"></i></a>
+                    <a href="#"> <i class="fab fa-linkedin fa-2x py-2 m-3"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End of About Team -->
+
+    <section class="strategy">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-5">
+                    <h2>BRAND STRATEGY</h2>
+                    <p>
+                        Recruitment Agency that strives to help businesses put together a staff of highly efficient and skilled professionals, and also serve employees by opening up new vistas of job opportunities for them.
+                    </p>
+                    <li><i class="fas fa-minus"> &nbsp;</i>Brand equity audit</li>
+                    <li><i class="fas fa-minus"> &nbsp;</i>Audience analysis</li>
+                    <li><i class="fas fa-minus"> &nbsp;</i>Competitive review</li>
+                    <li><i class="fas fa-minus"> &nbsp;</i>Strategic direction</li>
+
+
+
+                </div>
+                <div class="col-md-6 bg-primary mt-5">
+
+                    <h2>COMMUNICATION STRATEGY</h2>
+                    <p>
+                        Recruitment Agency that strives to help businesses put together a staff of highly efficient and skilled professionals, and also serve employees by opening up new vistas of job opportunities for them.
+                    </p>
+                    <li><i class="fas fa-minus"> &nbsp;</i> Visual positioning</li>
+                    <li><i class="fas fa-minus"> &nbsp;</i>Visual identity system</li>
+                    <li><i class="fas fa-minus"> &nbsp;</i>Icon & illustration guides</li>
+                    <li><i class="fas fa-minus"> &nbsp;</i>Brand application</li>
+
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Footer -->
+<section class=" footer text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 py-4 py-md-5 reveal">
+                <div class="d-flex align-items-center">
+                    <h4 class="">KrishnaTrix</h4>
+                </div>
+                <p class="py-3 para-light">KrishnaTrix is an organization that is amalgamated with a group of innovative and talented experts who have insight and mastery in web planning, web advancement and graphic designing.</p>
+                <div class="d-flex">
+                    <div class="me-3">
+                        <a href="https://www.facebook.com/KrishnaTrix-226890745958076/">
+                            <i class="fab fa-facebook-f fa-2x "></i>
+                        </a>
+                    </div>
+                    <div class="me-3">
+                        <a href="https://www.linkedin.com/in/bibhuti-ranjan-das-3ba258201">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="me-3">
+                        <a href="https://instagram.com/krishnatrix_web_solutions?utm_medium=copy_link">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- end of col -->
+            <div class="col-lg-3 py-4 py-md-5 reveal">
+                <div>
+                    <h4 class="py-2">Quick Links</h4>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="#">
+                            <p class="ms-3">About</p>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="/index.html#services">
+                            <p class="ms-3">Services</p>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="/index.html#plans">
+                            <p class="ms-3">Plans</p>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="/contact.html">
+                            <p class="ms-3">Contact</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end of col -->
+            <div class="col-lg-3 py-4 py-md-5 reveal">
+                <div>
+                    <h4 class="py-2">Useful Links</h4>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="#">
+                            <p class="ms-3">Privacy</p>
+                        </a>
+
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="#">
+                            <p class="ms-3">Terms</p>
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- end of col -->
+            <div class="col-lg-3 py-4 py-md-5">
+                <div class="d-flex align-items-center">
+                    <h4>Newsletter</h4>
+                </div>
+                <p class="py-3 para-light"> Subscribe to receive emails on daily Newsletter about
+                    our blogs </p>
+                <div class="d-flex align-items-center">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control p-2" placeholder="Enter Email" aria-label="Recipient's email">
+                        <button class="btn-secondary text-light"><i class="fas fa-envelope fa-lg"></i></button>
+                    </div>
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</section>
+<!-- end of footer -->
+<!-- Bottom -->
+<div class=" bottom py-4 text-light">
+    <div class="container d-flex justify-content-between">
+        <div>
+            <p>Copyright © 2021</p>
+        </div>
+    </div> <!-- end of container -->
+</div> <!-- end of bottom -->
+<!-- Back To Top Button -->
+<button class="" onclick="topFunction()" id="myBtn">
+    <i class="fas fa-chevron-up"></i>
+</button>
+<!-- end of back to top button -->
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/79ee746da7.js" crossorigin="anonymous"></script>
+<script src="./js/script.js"></script> <!-- Custom scripts -->
+</body>
+
+</html>

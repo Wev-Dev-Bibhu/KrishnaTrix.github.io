@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Website developing, development, how to build website, website making company">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="E-Web Tech" /> <!-- website name -->
+    <meta property="og:site" content="https://digitalpreneurservice.000webhostapp.com/" /> <!-- website link -->
+    <meta property="og:title" content="Make your own Website Now easily with Us" />
+    <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="Website Making Company. Efficient building developer." />
+    <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Contact to Us. Helping you with queries and your problems | E-Web Tech Pvt Ltd.</title>
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/favicon.png">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav id="navbar" class=" navbar navbar-expand-lg fixed-top navbar-dark " aria-label="Main navigation">
+    <div class="container">
+
+        <!-- Image Logo -->
+        <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> -->
+
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <a class="navbar-brand logo-text home_text fs-2" href="/index.html">KrishnaTrix</a>
+
+        <a href="javascript:void(0)">
+            <i class="fas fa-bars fs-1 navbar-toggler p-0 border-0" id="navbarSideCollapse" aria-label="Toggle navigation"></i>
+        </a>
+
+
+
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/index.html#header">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html#services">Services</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" href="#">More</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Rate Us</a></li>
+                        <li>
+                            <div class="dropdown-divider"></div>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Our Projects</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://www.facebook.com/KrishnaTrix-226890745958076/">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="https://instagram.com/krishnatrix_web_solutions?utm_medium=copy_link">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div> <!-- end of navbar-collapse -->
+    </div> <!-- end of container -->
+</nav> <!-- end of navbar -->
+<!-- end of navigation -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title" id="exampleModalLabel">Rate Us</h5>
+                <button type="button" id="clear-button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-dark">
+
+
+                <form method="post" action="" class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-12">
+                        <h5 class="text-light">Provide Us Your Valuable Feedback to Help & Improve Us</h5>
+                    </div>
+                    <div class="col-md-8">
+                        <label for="validationCustom03" class="form-label text-light">Rate Us Now</label>
+                        <div class="star-widget" onclick="showfdback()">
+                            <input type="radio" class="rate" name="rate" id="rate-1" value="5-star-ratings">
+                            <label for="rate-1"><i class="far fa-star"></i></label>
+
+                            <input type="radio" class="rate" name="rate" id="rate-2" value="4-star-ratings">
+                            <label class="form-label" for="rate-2"><i class="far fa-star"></i></label>
+
+                            <input type="radio" class="rate" name="rate" id="rate-3" value="3-star-ratings">
+                            <label for="rate-3"><i class="far fa-star"></i></label>
+
+                            <input type="radio" class="rate" name="rate" id="rate-4" value="2-star-ratings">
+                            <label for="rate-4"><i class="far fa-star"></i></label>
+
+                            <input type="radio" class="rate" name="rate" id="rate-5" value="1-star-ratings">
+                            <label for="rate-5"><i class="far fa-star"></i></label>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 formhide">
+                        <label for="validationCustom03" class="form-label text-light">Name</label>
+                        <input type="text" class="form-control bg-transparent text-white" id="validationCustom01" required name="name">
+                        <div class="invalid-feedback">
+                            Please provide your Name.
+                        </div>
+                    </div>
+                    <div class="col-md-7 formhide">
+                        <label for="validationCustom03" class="form-label text-light">Feedback Message</label>
+                        <textarea style="resize: none;" type="text" rows="4" name="message" class="form-control bg-transparent text-light" id="validationCustom03" required></textarea>
+                        <div class="invalid-feedback">
+                            Please provide a Message.
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 text-center">
+                        <button class="btn btn-success" name="submit" type="submit">Submit form</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Modal -->
+    <!-- Header -->
+    <header class="ex-header pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 ">
+                    <h1>Contact Us</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+    <!-- Contact -->
+    <section class="contact d-flex align-items-center py-0" id="contact">
+        <div class="container-fluid text-light">
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center px-lg-5">
+                    <div class="about-k">
+                        <img src="./assets/images/K4.webp" alt="">
+                    </div>
+                    <form id="frmSubmit" class="needs-validation" name="myForm" novalidate>
+                        <div style="width:90%">
+                            <div class="text-center text-lg-start py-4 pt-lg-0">
+                                <h2 class="py-2">Send your query</h2>
+                                <p class="para-light">Send Us your queries or Message to improve ourself & to provide u
+                                    the best Help related to your Problems.</p>
+                            </div>
+                            <div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group py-2">
+                                            <input type="text" name="name" class="form-control form-control-input field" id="validationCustomUsername" required placeholder="Enter Your name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group py-2">
+                                            <input type="text" name="number" class="form-control form-control-input field" value="" required placeholder="Enter phone number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group py-1">
+                                    <input type="email" name="email" class="form-control form-control-input field" required placeholder="Enter email">
+                                </div>
+                                <div class="form-group py-1">
+                                    <input type="text" name="company" class="form-control form-control-input field" required placeholder="Enter Your Company Name">
+                                </div>
+                                <div class="form-group py-2">
+                                    <textarea style="resize: none;" name="message" class="form-control form-control-input field" rows="5" required placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="my-3">
+                                <button class="btn form-control-submit-button" onclick="validateForm()" type="submit" id="btnSubmit" name="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- end of div -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 d-flex align-items-center">
+                    <img class="img-fluid d-none d-lg-block contact-img" src="./assets/images/contact.webp" alt="contact">
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section>
+    <!-- end of contact -->
+<!-- Footer -->
+<section class=" footer text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 py-4 py-md-5 reveal">
+                <div class="d-flex align-items-center">
+                    <h4 class="">KrishnaTrix</h4>
+                </div>
+                <p class="py-3 para-light">KrishnaTrix is an organization that is amalgamated with a group of innovative and talented experts who have insight and mastery in web planning, web advancement and graphic designing.</p>
+                <div class="d-flex">
+                    <div class="me-3">
+                        <a href="https://www.facebook.com/KrishnaTrix-226890745958076/">
+                            <i class="fab fa-facebook-f fa-2x "></i>
+                        </a>
+                    </div>
+                    <div class="me-3">
+                        <a href="https://www.linkedin.com/in/bibhuti-ranjan-das-3ba258201">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="me-3">
+                        <a href="https://instagram.com/krishnatrix_web_solutions?utm_medium=copy_link">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- end of col -->
+            <div class="col-lg-3 py-4 py-md-5 reveal">
+                <div>
+                    <h4 class="py-2">Quick Links</h4>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="/about.html">
+                            <p class="ms-3">About</p>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="/index.html#services">
+                            <p class="ms-3">Services</p>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="/index.html#plans">
+                            <p class="ms-3">Plans</p>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="#">
+                            <p class="ms-3">Contact</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end of col -->
+            <div class="col-lg-3 py-4 py-md-5 reveal">
+                <div>
+                    <h4 class="py-2">Useful Links</h4>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="#">
+                            <p class="ms-3">Privacy</p>
+                        </a>
+
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="#">
+                            <p class="ms-3">Terms</p>
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- end of col -->
+            <div class="col-lg-3 py-4 py-md-5">
+                <div class="d-flex align-items-center">
+                    <h4>Newsletter</h4>
+                </div>
+                <p class="py-3 para-light"> Subscribe to receive emails on daily Newsletter about
+                    our blogs </p>
+                <div class="d-flex align-items-center">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control p-2" placeholder="Enter Email" aria-label="Recipient's email">
+                        <button class="btn-secondary text-light"><i class="fas fa-envelope fa-lg"></i></button>
+                    </div>
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</section>
+<!-- end of footer -->
+<!-- Bottom -->
+<div class=" bottom py-4 text-light">
+    <div class="container d-flex justify-content-between">
+        <div>
+            <p>Copyright © 2021</p>
+        </div>
+    </div> <!-- end of container -->
+</div> <!-- end of bottom -->
+<!-- Back To Top Button -->
+<button class="" onclick="topFunction()" id="myBtn">
+    <i class="fas fa-chevron-up"></i>
+</button>
+<!-- end of back to top button -->
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/79ee746da7.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script> <!-- Custom scripts -->
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/79ee746da7.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script> <!-- Custom scripts -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        function validateForm() {
+            let all = document.forms["myForm"]["name", "number", "company", "email", "message"].value;
+            let name = document.forms["myForm"]["name"].value;
+            let number = document.forms["myForm"]["number"].value;
+            let company = document.forms["myForm"]["company"].value;
+            let email = document.forms["myForm"]["email"].value;
+            let message = document.forms["myForm"]["message"].value;
+            if (all == "") {
+                alert("Please Fill all Details!!");
+                return false;
+            } else if (name == "") {
+                alert("Please Enter Valid Name!!");
+                return false;
+            } else if (number == "") {
+                alert("Please Enter Valid Number!!");
+                return false;
+
+            } else if (company == "") {
+                alert("Please Enter Valid Company Name!!");
+                return false;
+
+            } else if (email == "") {
+                alert("Please Enter Valid Email!!");
+                return false;
+
+            } else if (message == "") {
+                alert("Please Enter Valid Mssage!!");
+                return false;
+
+            } else {
+                document.getElementById("btnSubmit").innerHTML = "Please Wait";
+                jQuery('#frmSubmit').on('submit', function(e) {
+                    e.preventDefault();
+                    jQuery('#btnSubmit').attr('disabled', true);
+                    jQuery.ajax({
+                        url: 'https://script.google.com/macros/s/AKfycbywuZh_xy70DS5Ob9ThbC6fzS9fvF-4oDBXC3wo8rBJRBdq2VQYL-uWGg6qn0HDqwCi/exec',
+                        type: 'post',
+                        data: jQuery('#frmSubmit').serialize(),
+                        success: function(result) {
+                            jQuery('#frmSubmit')[0].reset();
+                            jQuery('#frmSubmit').removeClass("was-validated");
+                            // jQuery('#btnSubmit').value('Please wait');
+                            jQuery('#btnSubmit').attr('disabled', false);
+                            document.getElementById("btnSubmit").innerHTML = "Submit";
+                            window.alert('Thanks for Contacting Us.. We will reach you Shortly!');
+                            document.getElementById("btnSubmit").innerHTML = "Submit";
+                            // window.location.href = 'index.php';
+                        }
+                    });
+
+
+                });
+            }
+        };
+    </script>
+
+
+</body>
+
+</html>

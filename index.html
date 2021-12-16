@@ -1,12 +1,610 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Website developing, development, how to build website, website making company">
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="E-Web Tech" /> <!-- website name -->
+    <meta property="og:site" content="https://digitalpreneurservice.000webhostapp.com/" /> <!-- website link -->
+    <meta property="og:title" content="Make your own Website Now easily with Us" />
+    <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="Website Making Company. Efficient building developer." />
+    <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+    <!-- Webpage Title -->
+    <title>E-Web Tech Pvt Ltd.| The best Website Design for newly startup Companies or bloggers. </title>
+    <!-- Styles -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/favicon.webp">
+    </style>
 </head>
+
 <body>
-    hello
+
+   <!-- Navigation -->
+<nav id="navbar" class=" navbar navbar-expand-lg fixed-top navbar-dark " aria-label="Main navigation">
+    <div class="container">
+
+        <!-- Image Logo -->
+        <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> -->
+
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <a class="navbar-brand logo-text home_text fs-2" href="/index.html">KrishnaTrix</a>
+
+        <a href="javascript:void(0)">
+            <i class="fas fa-bars fs-1 navbar-toggler p-0 border-0" id="navbarSideCollapse" aria-label="Toggle navigation"></i>
+        </a>
+
+
+
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/index#header">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index#services">Services</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" href="#">More</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Rate Us</a></li>
+                        <li>
+                            <div class="dropdown-divider"></div>
+                        </li>
+                        <li><a class="dropdown-item" href="/project">Our Projects</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://www.facebook.com/KrishnaTrix-226890745958076/">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="https://instagram.com/krishnatrix_web_solutions?utm_medium=copy_link">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div> <!-- end of navbar-collapse -->
+    </div> <!-- end of container -->
+</nav> <!-- end of navbar -->
+<!-- end of navigation -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title" id="exampleModalLabel">Rate Us</h5>
+                <button type="button" id="clear-button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-dark">
+
+
+                <form method="post" action="" class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-12">
+                        <h5 class="text-light">Provide Us Your Valuable Feedback to Help & Improve Us</h5>
+                    </div>
+                    <div class="col-md-8">
+                        <label for="validationCustom03" class="form-label text-light">Rate Us Now</label>
+                        <div class="star-widget" onclick="showfdback()">
+                            <input type="radio" class="rate" name="rate" id="rate-1" value="5-star-ratings">
+                            <label for="rate-1"><i class="far fa-star"></i></label>
+
+                            <input type="radio" class="rate" name="rate" id="rate-2" value="4-star-ratings">
+                            <label class="form-label" for="rate-2"><i class="far fa-star"></i></label>
+
+                            <input type="radio" class="rate" name="rate" id="rate-3" value="3-star-ratings">
+                            <label for="rate-3"><i class="far fa-star"></i></label>
+
+                            <input type="radio" class="rate" name="rate" id="rate-4" value="2-star-ratings">
+                            <label for="rate-4"><i class="far fa-star"></i></label>
+
+                            <input type="radio" class="rate" name="rate" id="rate-5" value="1-star-ratings">
+                            <label for="rate-5"><i class="far fa-star"></i></label>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 formhide">
+                        <label for="validationCustom03" class="form-label text-light">Name</label>
+                        <input type="text" class="form-control bg-transparent text-white" id="validationCustom01" required name="name">
+                        <div class="invalid-feedback">
+                            Please provide your Name.
+                        </div>
+                    </div>
+                    <div class="col-md-7 formhide">
+                        <label for="validationCustom03" class="form-label text-light">Feedback Message</label>
+                        <textarea style="resize: none;" type="text" rows="4" name="message" class="form-control bg-transparent text-light" id="validationCustom03" required></textarea>
+                        <div class="invalid-feedback">
+                            Please provide a Message.
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 text-center">
+                        <button class="btn btn-success" name="submit" type="submit">Submit form</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Modal -->
+    <!-- Home -->
+    <section class=" home py-5 d-flex align-items-center" id="header">
+        <div class="container text-light py-5">
+            <h1 class="headline">Best <span class="home_text">Websites</span><br>Designs Plans For You</h1>
+            <p class="para para-light py-3">Giving You the best and intareactive UI plan for making sites according to
+                your Company!</p>
+            <div class="d-flex align-items-center reveal">
+                <p class="p-2"><i class="fas fa-laptop-house fa-lg"></i></p>
+                <p>Invincible Website Designing.</p>
+            </div>
+            <div class="d-flex align-items-center reveal">
+                <p class="p-2"><i class="fas fa-wifi fa-lg"></i></p>
+                <p>Organizing traffic user-friendly sites.</p>
+            </div>
+        </div> <!-- end of container -->
+    </section> <!-- end of home -->
+    <!-- Information -->
+    <section class="information ">
+        <div class="container-fluid">
+            <div class="row text-light">
+                <div class="col-lg-4 text-center p-5 reveal">
+                    <i class="fas fa-laptop fa-3x p-2"></i>
+                    <h4 class="py-3">User Friendly Designs</h4>
+                    <p class="para-light">Planning You the most User Friendly plans to get the client drawn in by you.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-center p-5 reveal">
+                    <i class="fas fa-tachometer-alt fa-3x p-2"></i>
+                    <h4 class="py-3">2x More Speed</h4>
+                    <p class="para-light">Giving you more speed by fostering your sites in methodicallly ways that is
+                        done intentionally</p>
+                </div>
+                <div class="col-lg-4 text-center p-5 reveal bg-dark">
+                    <i class="fas fa-headset fa-3x p-2"></i>
+                    <h4 class="py-3">24/7 Support </h4>
+                    <p class="para-light">Administrations that give 24/7 assist with consultancy, helping you in more
+                        effective ways!</p>
+                </div>
+            </div>
+        </div> <!-- end of container -->
+    </section> <!-- end of information -->
+    <!-- About -->
+    <section class="about  d-flex align-items-center text-light py-2" id="about">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-7 reveal">
+                    <p>ABOUT US</p>
+
+                    <h1 class="home_text">We're most efficient <br>website developing company</h1>
+                    <p class="py-2 para-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus
+                        officia pariatur facilis error molestiae ex vel assumenda perferendis! Eaque incidunt odio
+                        numquam corrupti cupiditate perspiciatis, asperiores reprehenderit laboriosam labore expedita!.
+                    </p>
+                    <p class="py-2 para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed
+                        accusantium aut dolores inventore architecto modi cupiditate eligendi corporis, illum illo
+                        culpa. Reiciendis, molestias. Illum voluptatum quisquam ad veritatis dolorem.</p>
+
+                    <div class="my-3">
+                        <a class="btn" href="/about">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center py-4 py-sm-0 reveal">
+                    <img class="img-fluid" src="./assets/images/about.webp" alt="about">
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of about -->
+    <!-- Services -->
+    <section class=" services d-flex align-items-center py-5" id="services">
+        <div class="container text-light">
+            <div class="text-center pb-4 ">
+                <p>OUR SERVICES</p>
+                <h2 class="py-2">Explore Our Features</h2>
+                <p class="para-light">We accept that nonstop examination assists us with understanding client's requirements,
+                    so we can work as per customer's need. <br> Our group flourishes in a climate where we can work
+                    as accomplices with our customers.</p>
+            </div>
+            <div class="row gy-4 py-2">
+                <div class="col-lg-4 reveal">
+                    <div class="card bg-transparent">
+                        <i class="fas fa-mobile-alt fa-2x"></i>
+                        <h4 class="py-2">DEVICE RESPONSIVE</h4>
+                        <p class="para-light">Looking for a hassle free page! So, folks you are in a right track. If you
+                            don’t believe it , look for yourself. A website where you can get an ambiance of friendly
+                            users and designs. You might be thinking whether or not, all
+                            devices. Is adaptable or not! In this case, let me clear you,
+                            YES it is.
+                            Ahaan, don’t get so shocked ,you read absolutely correct. So what are you waiting for …Go
+                            ahead and give a try!!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 reveal">
+                    <div class="card bg-transparent">
+                        <i class="fas fa-lock fa-2x"></i>
+                        <h4 class="py-2"> TOTAL SECURITY</h4>
+                        <p class="para-light">A web page with complete security that includes:
+                            Registry lock, Hotlink protection, Spam Stop features are available, Distributed Denial of
+                            service attacks protection is been provided , SSL protection, Secure Administrative passwords are there and the most important Protection from
+                            cross-site scripting(XSS) attacks and Data backup are available.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 reveal">
+                    <div class="card bg-transparent">
+                        <i class="fas fa-palette fa-2x"></i>
+                        <h4 class="py-2">UI / UX DESIGN</h4>
+                        <p class="para-light">We don’t restrict to ourselves with old web development technologies. Rather than we upgrade ourselves to
+                            new web technologies. Our team works really hard and that too very thoroughly.
+                            I’m sure you will get the best experience up to date and our team is always looking for a
+                            way to update the interface as per the demand. <br> <br></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 reveal">
+                    <div class="card bg-transparent">
+                        <i class="fas fa-dollar-sign fa-2x"></i>
+                        <h4 class="py-2">LOW PRICE HIGH OUTPUT</h4>
+                        <p class="para-light">To make you all feel succinctly elated, here you get the most captivating offers.
+                            Even the unblemished entrepreneurs will be able to afford the price with a very high output.
+                            We provide you the less budgets plan which doesn't affect the quality of your websites. Affording higher outputs at lower budgets ‼️</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 reveal">
+                    <div class="card bg-transparent">
+                        <i class="fas fa-mail-bulk fa-2x"></i>
+                        <h4 class="py-2">BUSINESS EMAIL</h4>
+                        <p class="para-light">We understand your concern as Business. For that we have kept a professional business email for companies. <br>
+                            If you are running a business, then you need Corporate Email Service for your company domain name like work@company.com</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-lg-4 reveal">
+                    <div class="card bg-transparent">
+                        <i class="fas fa-clock fa-2x"></i>
+                        <h4 class="py-2">BEFORE TIME DELIVERY</h4>
+                        <p class="para-light">
+                            We ensure that every project completes on time or the given deadline is our top priority.
+                            Succeeding the prerequisite payment you will get your desired website with complete domain, website link, hosting password and the required authentic documents.
+                            <br> <br>
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+
+    </section> <!-- end of services -->
+    <!-- Plans -->
+    <section class=" plans d-flex align-items-center py-5" id="plans">
+        <div class="container text-light">
+            <div class="text-center pb-4">
+                <p>BUSINESS WEBSITE PRICING PLANS</p>
+                <h2 class="py-2">Explore unlimited possibilities</h2>
+                <p class="para-light">Business site bundle incorporates the majority of fundamental thing needs for addressing a business on the web, contact our sales group for thoughts and ideas.</p>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-4 reveal">
+                    <div class="card bg-transparent px-4">
+                        <h4 class="py-2">BASIC </h4>
+                        <p class="py-3">Suitable for Startups.</p>
+                        <h4 class="py-3 rupees"><i class="fas fa-rupee-sign"></i> 999 <i class="fas fa-minus"> &nbsp;</i><i class="fas fa-rupee-sign"></i> 4999</h4>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Paid/Free Domain & Hosting</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p> Basic Features</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Basic Graphics</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Normal Contents</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Basic SEO</p>
+                        </div>
+
+                        <div class="my-3">
+                            <a class="btn" href="book-service.php">Get Now</a>
+                        </div>
+                        <div class="png2">
+                            <img src="./assets/images/K2.webp" alt="krishna">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 reveal">
+                    <div class="card bg-transparent px-4">
+                        <h4 class="py-2">ECONOMY</h4>
+                        <p class="py-3">Suitable for Medium Business.</p>
+                        <h4 class="py-3 rupees"><i class="fas fa-rupee-sign"></i> 4999 <i class="fas fa-minus"> &nbsp;</i><i class="fas fa-rupee-sign"></i> 12999</h4>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Includes Domain & Hosting</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>All Improved Features</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Photoshop Graphics</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Improved Contents</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Improved SEO</p>
+                        </div>
+
+                        <div class="my-3">
+                            <a class="btn" href="book-service.php">Get Now</a>
+                        </div>
+                        <div class="png2">
+                            <img src="./assets/images/K3.webp" alt="krishna">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 reveal">
+                    <div class="card bg-transparent px-4">
+                        <h4 class="py-2">PREMIUM</h4>
+                        <p class="py-3">Best for Enterprise</p>
+                        <h4 class="py-3 rupees">
+                            <sup><i class="fas fa-rupee-sign"></i></sup>
+                            <i class="fas fa-minus"></i>
+                            <i class="fas fa-minus"></i>
+                            <i class="fas fa-minus"></i>
+                            <i class="fas fa-minus"></i>
+                        </h4>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Advanced Layout</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Premium Features</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Advanced Graphics</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Advanced UI</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Advanced SEO</p>
+                        </div>
+
+                        <div class="my-3">
+                            <a class="btn" href="book-service.php">Get Now</a>
+                        </div>
+                        <div class="png2">
+                            <img src="./assets/images/kpng2.webp" alt="krishna">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+
+    </section> <!-- end of plans -->
+    <!-- Work -->
+    <section class=" work d-flex align-items-center ">
+        <div class="container text-light reveal">
+            <div class="row">
+                <div class="col-lg-6 d-flex align-items-center">
+                    <img class="img-fluid" src="./assets/images/work.webp" alt="work">
+                </div>
+                <div class="col-lg-5 d-flex align-items-center px-4 py-3">
+                    <div class="row">
+                        <div class="text-center text-lg-start py-4 pt-lg-0">
+                            <h2 class="py-2">WHY CHOOSE US <i class="fas fa-question fa-3x"></i></h2>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-users mx-3 fs-4"></i>
+                                    <p>We treat your work like it's our own</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-edit mx-3 fs-4"></i>
+                                    <p>We do lot more for you than just writing</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-user-shield mx-3 fs-4"></i>
+                                    <p>We are honest & we don't spoil our clients</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-hand-holding-usd mx-3 fs-4"></i>
+                                    <p>We value your money</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-globe mx-3 fs-4"></i>
+                                    <p>We provide consulting ideas & resources</p>
+                                </div>
+                            </div>
+                        </div> <!-- end of container -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of col-lg-5 -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section>
+    <!-- end of work -->
+    <!-- Location -->
+    <section class=" location text-light py-5">
+        <div class="container reveal">
+            <div class="row">
+                <div class="col-lg-3 d-flex align-items-center">
+                    <div class="p-2"><i class="far fa-map fa-3x"></i></div>
+                    <div class="ms-2">
+                        <h6>ADDRESS</h6>
+                        <p>We Work Remotely</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-flex align-items-center">
+                    <div class="p-2"><i class="fas fa-mobile-alt fa-3x"></i></div>
+                    <div class="ms-2">
+                        <h6>CALL FOR QUERY</h6>
+                        <p><a href="tel:+91 8118010606">+91 8118010606</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-flex align-items-center">
+                    <div class="p-2"><i class="far fa-envelope fa-3x"></i></div>
+                    <div class="ms-2">
+                        <h6>SEND US MESSAGE</h6>
+                        <p><a href="mailto:couchninjahelpservices@gmail.com">couchninjahelpservices</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-flex align-items-center">
+                    <div class="p-2"><i class="far fa-clock fa-3x"></i></div>
+                    <div class="ms-2">
+                        <h6>OPENING HOURS</h6>
+                        <p>08:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section>
+    <!-- end of location -->
+  <!-- Footer -->
+<section class=" footer text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 py-4 py-md-5 reveal">
+                <div class="d-flex align-items-center">
+                    <h4 class="">KrishnaTrix</h4>
+                </div>
+                <p class="py-3 para-light">KrishnaTrix is an organization that is amalgamated with a group of innovative and talented experts who have insight and mastery in web planning, web advancement and graphic designing.</p>
+                <div class="d-flex">
+                    <div class="me-3">
+                        <a href="https://www.facebook.com/KrishnaTrix-226890745958076/">
+                            <i class="fab fa-facebook-f fa-2x "></i>
+                        </a>
+                    </div>
+                    <div class="me-3">
+                        <a href="https://www.linkedin.com/in/bibhuti-ranjan-das-3ba258201">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="me-3">
+                        <a href="https://instagram.com/krishnatrix_web_solutions?utm_medium=copy_link">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- end of col -->
+            <div class="col-lg-3 py-4 py-md-5 reveal">
+                <div>
+                    <h4 class="py-2">Quick Links</h4>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="/about">
+                            <p class="ms-3">About</p>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="/index#services">
+                            <p class="ms-3">Services</p>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="/index#plans">
+                            <p class="ms-3">Plans</p>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="/contact">
+                            <p class="ms-3">Contact</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end of col -->
+            <div class="col-lg-3 py-4 py-md-5 reveal">
+                <div>
+                    <h4 class="py-2">Useful Links</h4>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="/privacy">
+                            <p class="ms-3">Privacy</p>
+                        </a>
+
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="/terms">
+                            <p class="ms-3">Terms</p>
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- end of col -->
+            <div class="col-lg-3 py-4 py-md-5">
+                <div class="d-flex align-items-center">
+                    <h4>Newsletter</h4>
+                </div>
+                <p class="py-3 para-light"> Subscribe to receive emails on daily Newsletter about
+                    our blogs </p>
+                <div class="d-flex align-items-center">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control p-2" placeholder="Enter Email" aria-label="Recipient's email">
+                        <button class="btn-secondary text-light"><i class="fas fa-envelope fa-lg"></i></button>
+                    </div>
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</section>
+<!-- end of footer -->
+<!-- Bottom -->
+<div class=" bottom py-4 text-light">
+    <div class="container d-flex justify-content-between">
+        <div>
+            <p>Copyright © 2021</p>
+        </div>
+    </div> <!-- end of container -->
+</div> <!-- end of bottom -->
+<!-- Back To Top Button -->
+<button class="" onclick="topFunction()" id="myBtn">
+    <i class="fas fa-chevron-up"></i>
+</button>
+<!-- end of back to top button -->
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/79ee746da7.js" crossorigin="anonymous"></script>
+<script src="./js/script.js"></script> <!-- Custom scripts -->
 </body>
+
 </html>
