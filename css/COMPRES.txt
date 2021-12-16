@@ -1,0 +1,107 @@
+
+.fa,.fab,.fad,.fal,.far,.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}.fa-lg{font-size:1.33333em;line-height:.75em;vertical-align:-.0667em}
+.fa-1x{
+    font-size:1em
+}
+.fa-2x{
+    font-size:2em
+}
+.fa-3x{
+    font-size:3em
+}
+.fa-stack-1x,.fa-stack-2x{
+    left:0;position:absolute;
+    text-align:center;
+    width:100%
+}
+.fa-stack-1x{
+    line-height:inherit;
+}
+.fa-stack-2x{
+    font-size:2em;
+}
+   .fa-bars:before{content:"\f0c9"}
+   .fa-brush:before{content:"\f55d"}
+   .fa-caret-right:before{content:"\f0da"}
+
+   .fa-check-circle:before{content:"\f058"}
+
+
+
+
+   
+   
+   .fa-circle:before{content:"\f111"}
+   
+
+   
+   
+   .fa-clock:before{content:"\f017"}
+   
+
+   
+   
+   
+   .fa-dollar-sign:before{content:"\f155"}
+
+   
+   
+   
+   .fa-envelope:before{content:"\f0e0"}
+   
+   
+   
+
+   
+   
+   .fa-facebook-f:before{content:"\f39e"}
+   
+   
+
+   
+   
+   .fa-headset:before{content:"\f590"}
+   
+  
+   
+   .fa-instagram:before{content:"\f16d"}
+   
+
+   
+   
+   .fa-laptop:before{content:"\f109"}
+   
+   
+   
+   
+   .fa-laptop-house:before{content:"\e066"}
+   
+   
+   
+   
+   .fa-mobile-alt:before{content:"\f3cd"}
+   
+   
+   
+   
+   .fa-palette:before{content:"\f53f"}
+   
+
+   
+   
+   .fa-tachometer-alt:before{content:"\f3fd"}
+   
+
+   
+   
+   .fab{font-family:"Font Awesome 5 Brands"}
+   
+
+   
+   .fab,.far{font-weight:400}
+   
+
+   
+   
+   
+   .fa,.far,.fas{font-family:"Font Awesome 5 Free"}.fa,.fas{font-weight:900}
